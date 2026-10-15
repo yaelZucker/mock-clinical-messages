@@ -1,0 +1,14 @@
+{
+  "name": "demo-clinical-messages",
+  "version": "1.0.0",
+  "description": "Demo clinical messaging system: patient vitals → alerts → nurse notifications",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "demo": "node demo/simulate.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  }
+}
