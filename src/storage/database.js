@@ -22,4 +22,9 @@ function getRecords(clinicId) {
   return getClinicStore(clinicId);
 }
 
-module.exports = { insertIdempotent, getRecords };
+function _reset() {
+  store.clear();
+  idempotencyKeys.clear();
+}
+
+module.exports = { insertIdempotent, getRecords, _reset };

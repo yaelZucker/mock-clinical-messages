@@ -29,4 +29,9 @@ function drainRoutine(handler) {
   }
 }
 
-module.exports = { enqueue, drainUrgent, drainRoutine };
+function _reset() {
+  urgentQueue.length = 0;
+  routineQueue.length = 0;
+}
+
+module.exports = { enqueue, drainUrgent, drainRoutine, _reset };

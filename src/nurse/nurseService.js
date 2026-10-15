@@ -23,4 +23,8 @@ function getPendingAlerts() {
   return Array.from(worklist.values()).filter(a => !a.acknowledged);
 }
 
-module.exports = { addAlert, acknowledge, getWorklist, getPendingAlerts };
+function _reset() {
+  worklist.clear();
+}
+
+module.exports = { addAlert, acknowledge, getWorklist, getPendingAlerts, _reset };

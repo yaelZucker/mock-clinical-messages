@@ -5,10 +5,18 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "demo": "node demo/simulate.js"
+    "demo": "node demo/simulate.js",
+    "test": "jest"
   },
   "dependencies": {
     "express": "^4.18.2",
     "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
