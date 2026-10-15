@@ -1,5 +1,5 @@
 {
-  "name": "demo-clinical-messages",
+  "name": "mock-clinical-messages",
   "version": "1.0.0",
   "description": "Demo clinical messaging system: patient vitals → alerts → nurse notifications",
   "main": "src/index.js",

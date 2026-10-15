@@ -1,4 +1,4 @@
-# demo-clinical-messages
+# mock-clinical-messages
 
 A Node.js demo of a clinical patient-alert messaging system, based on the architecture below.
 
